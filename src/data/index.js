@@ -1,6 +1,6 @@
 import {
   cause,
-  yoshinoya,
+  noora,
   squirrel,
 } from "../assets";
 
@@ -80,10 +80,10 @@ const portfolio = [
     image: squirrel,
   },
   {
-    name: "Yoshinoya Smart QR",
+    name: "Noora AI story to video apps",
     description:
-      "Build Smart QR Apps for self-ordering and payment gateway in 2023. Feature: Multi-language, Multi-currency, Multi-payment gateway, Order management, Kitchen display system and dashboard for admins to manage the restaurant.",
-    image: yoshinoya,
+      "Build AI video generation application with trained LLMs, advanced models execution and optimized performance between server-side and client-side powered by clustered typescript with mem-cache and advanced redis implementation.",
+    image: noora,
   },
 ];
 
