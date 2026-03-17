@@ -67,11 +67,13 @@ const SpacemanCanvas = ({ scrollContainer }) => {
   return (
     <Canvas className={`w-full h-screen bg-transparent z-10`} camera={{ near: 0.1, far: 1000 }}>
       <Suspense fallback={<CanvasLoader />}>
-        <directionalLight position={[1, 1, 1]} intensity={2} />
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 5, 10]} intensity={2} />
-        <spotLight position={[0, 50, 10]} angle={0.15} penumbra={1} intensity={2} />
-        <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1} />
+        {/* Cyberpunk lighting setup */}
+        <directionalLight position={[1, 1, 1]} intensity={1.5} color="#00f0ff" />
+        <ambientLight intensity={0.3} color="#0a0a0f" />
+        <pointLight position={[10, 5, 10]} intensity={2} color="#ff2a6d" />
+        <pointLight position={[-10, -5, -10]} intensity={1} color="#00f0ff" />
+        <spotLight position={[0, 50, 10]} angle={0.15} penumbra={1} intensity={2} color="#b537f2" />
+        <hemisphereLight skyColor="#00f0ff" groundColor="#0a0a0f" intensity={0.8} />
 
         <Spaceman rotationX={rotationX} rotationY={rotationY} scale={scale} position={position} />
       </Suspense>
