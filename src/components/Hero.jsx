@@ -15,14 +15,14 @@ const Hero = ({ scrollContainer }) => {
           </div>
 
           {/* Main name with glitch effect */}
-          <h1 className='font-orbitron font-black text-cyber-cyan text-[40px] xs:text-[40px] sm:text-[58px] md:text-[80px] lg:text-[100px] 2xl:text-[180px] leading-[110px] 2xl:leading-[160px] glitch-text cyber-text-glow tracking-wider'
+          <h1 className='font-orbitron font-black text-cyber-cyan text-[26px] xs:text-[32px] sm:text-[52px] md:text-[72px] lg:text-[100px] 2xl:text-[180px] leading-[1.1] glitch-text cyber-text-glow tracking-wider'
               data-text="FAISAL HAZMI">
             FAISAL HAZMI
           </h1>
           
           <Position />
           
-          <div className="mt-4 xs:mt-14 xs:ml-2 sm:mt-20 sm:ml-6 text-left ml-36">
+          <div className="mt-6 sm:mt-10 xs:ml-2 sm:ml-6 text-left ml-0 sm:ml-36">
             {/* Terminal-style description */}
             <div className="border-l-2 border-cyber-cyan/30 pl-4">
               <p className="font-mono text-[10px] text-cyber-pink/50 mb-2 tracking-widest uppercase">
